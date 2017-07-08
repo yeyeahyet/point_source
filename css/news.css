@@ -1,0 +1,190 @@
+/*----------------------通用样式--------------------------*/
+@charset "utf-8";
+*{
+	font-family:"Microsoft Yahei",sans-serif;     /*font-size/line-height*/
+	margin: 0;
+	padding: 0;
+}
+img{
+	border: 0;
+}
+a{			
+	text-decoration: none;			/*清除链接样式*/
+}
+a:link,a:visited{
+	color: #129aee;
+}
+a:hover,a:focus,a:active{
+	background-color: #129aee;
+	color: #fff;
+}
+#contain{
+	margin: auto 150px;
+}
+.clear:before,.clear:after{		/*清除浮动的兼容写法*/
+	content: "";
+	display: table;
+}
+.clear:after{
+	clear: both;
+}
+.clear{
+	*zoom: 1;      /*清除浮动_兼容老旧IE版本*/
+}
+/*------------------------head------------------------------*/
+#head{
+	background-color: #f1f1f1;
+	height: 28px;
+	box-shadow: 0px 5px 20px #bdbdbd;  /*水平 垂直 弥散 颜色*/
+	-moz-border-radius: 0px 5px 20px #bdbdbd;		/* Firefox */
+    -webkit-border-radius: 0px 5px 20px #bdbdbd;	/* Safari 和 Chrome */
+    position: relative;
+}
+#head p{
+	position: absolute;
+	right: 10px;
+	line-height: 28px;
+	color: #585858;
+}
+/*------------------Logo & 搜索 --------------------------*/
+#logo_search{
+	position: relative;
+}
+.logo{
+	margin:20px 0px; 
+}
+#search {
+	border: 0;
+	position: absolute;
+	top: 20px; 
+	right: 0px;   
+}   
+input.input_text{     	
+ 	height: 28px;
+ 	width: 312px;      
+ 	margin-right: 10px; 
+ 	border:1px solid #585858;
+ 	border-radius: 8px;  
+ 	-moz-border-radius: 8px;			/* Firefox */
+    -webkit-border-radius: 8px;			/* Safari 和 Chrome */  
+ } 
+button.search_btn{
+	border: none;
+	width: 48px;
+	height: 28px;
+	line-height: 28px;
+	color: #fff;
+	background-color: #129aee;
+}
+/*----------------------横向导航栏--------------------------*/
+a{
+	text-decoration: none;
+}
+#nav{
+	/*如果是ol还要去除列表编号 list-style-type:none*/
+	margin: 0;				/*去除ul的边距和填充*/
+	padding: 0;
+	font-size: 0px;			/*为了解决inline_block的空白间隔*/
+	overflow: hidden;		/*防止列表项的溢出*/
+}
+#nav li{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	padding:8px 0px;			/*上下填充一致*/
+}
+#nav a{
+	padding:8px 26px;			/*链接hover时显示为块状*/
+}
+#nav a:link,#nav a:visited{
+	color: #000;
+}
+#nav a:hover,#nav a:focus,#nav a:active{
+	color: #fff;
+	background-color: #129aee;
+}
+/* ----------------------content内容---------------- */
+#content{
+	width: 660px;
+	float: left;			/*当浮动没有定义宽度时，子元素会撑开父元素*/
+	padding: 10px 0px;
+}
+#content p{
+	color: #585858;
+}
+#content p>span{
+	float: right;
+}
+#content>span>img:first-child{
+	float: left;
+	margin-top: 10px;
+}
+#content span h3{
+	margin-left: 200px;
+	padding: 10px 0px;	
+}
+#content span p{
+	margin-left:200px;
+	margin-top: 38px;
+	padding-bottom: 10px;
+}
+#content span .hot{
+	vertical-align: middle;
+}
+#content .off{
+	float: right;
+	margin-top: -35px;
+}
+#content .pic_wall h3,#content .pic_wall p{
+	margin: 1px 0px;
+}
+#content .pic_wall img{
+	padding-right: 1px;
+}
+/*-----------------------sidebar_热门视频------------------*/
+#sidebar h3 {
+	margin-top: 20px;
+	padding-left: 5px;               /*标题旁边的小竖条*/
+	border-left: 3px solid #129aee;
+}
+#sidebar{
+	margin-left: 730px;
+	padding: 10px 0px;
+}
+#sidebar span>img{
+	float: left;
+	margin: 10px 0px;
+}
+#sidebar span p{
+	margin: 10px 0px 14px 130px;
+}
+#sidebar span>p+p{
+	color: #585858;
+}
+/*-----------------------sidebar_热门频道------------------*/
+#sidebar table td{
+	padding: 5px 20px;
+}
+#sidebar table{
+	text-align: center;
+}
+#sidebar .RSS a{
+	padding: 5px 15px;
+	color: #129aee;
+ 	border:1px solid #a0a0a0;
+ 	border-radius: 15px; 
+}
+#sidebar .RSS a:hover{
+	color: #fff;
+}
+/*------------------------footer----------------------*/
+footer{
+	background-color: #f1f1f1;
+}
+footer hr{
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+footer p{
+	text-align: center;
+}

@@ -1,0 +1,204 @@
+/*----------------------通用样式--------------------------*/
+@charset "utf-8";
+*{
+	font-family: "Microsoft Yahei",sans-serif;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+a:link,a:visited{
+	color: #129aee;
+}
+a:hover,a:focus,a:active{
+	background-color: #129aee;
+	color: #fff;
+}
+.clear:before,.clear:after{		/*清除浮动*/
+	content: "";
+	display: table;
+}
+.clear:after{
+	clear: left;
+}
+.clear{
+	*zoom: 1;
+}
+#contain{
+	margin: auto 150px;
+}
+/*------------------Logo & 搜索 --------------------------*/
+#head{
+	background-color: #ffffff;
+	box-shadow: 0px 5px 20px #bdbdbd;
+}
+.logo{
+	margin-left:100px; 
+	float: left;
+}
+/*----------------------横向导航栏--------------------------*/
+a{
+	text-decoration: none;
+}
+#nav{
+	/*如果是ol还要去除列表编号 list-style-type:none*/
+	margin: 0;				/*去除ul的边距和填充*/
+	padding: 0;
+	font-size: 0px;			/*为了解决inline_block的空白间隔*/
+	overflow: hidden;		/*防止列表项的溢出*/
+}
+#nav li{
+	display: inline-block;
+	font-size: 16px;
+	padding:8px 0px;			/*上下填充一致*/
+}
+#nav a{
+	padding:8px 28px;			/*链接hover时显示为块状*/
+}
+#nav a:link,#nav a:visited{
+	color: #000;
+}
+#nav a:hover,#nav a:focus,#nav a:active{
+	color: #fff;
+	background-color: #129aee;
+}
+/*---------------------content_内容-----------------------------*/
+#content{
+	width: 660px;
+	float: left;
+}
+#infor {
+	color: #585858;
+	padding:10px 0px;
+	position: relative;
+}
+#content .yc{
+	border: 1px solid #585858;
+	padding: 2px;
+}
+#content .onepoint{
+	color: #129aee;
+	border: 1px solid #129aee;
+	border-radius: 15px;
+	padding: 3px;
+}
+#infor .share{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+}
+#content p,#content h1,#content h2{
+	text-indent: 30px;
+	margin-top: 20px;
+}
+#content article{
+	position: relative;
+}
+#content article p:last-child{
+	color: #585858;
+	position: absolute;
+	right: 5px;
+	bottom: -20px;
+}
+/*-------------------discuss_评论留言---------------------*/
+#discuss{
+	width: 660px;
+	float: left;
+}
+#discuss img{
+	border-radius: 50%;	
+}
+#discuss form{
+	margin-top: 50px;
+	position: relative;
+}
+#discuss form button{
+	border: 0;
+	background-color: #129aee;
+	padding: 7px 20px;
+	color: #fff;
+	position: absolute;
+	right: 10px;
+	bottom: -38px;
+}
+#discuss .new_dis{
+	margin: 45px 0px 5px 0px;
+}
+#discuss img{
+	vertical-align: top;
+	margin-right: 30px;
+}
+#discuss span{
+	display: block;
+	position: relative;
+	padding: 10px 0px;
+}
+#discuss span p:nth-child(2){
+	position: absolute;
+	top: 10px;
+	left: 60px;
+}
+#discuss span p:nth-child(3){
+	position: absolute;
+	top: 32px;
+	left: 60px;
+}
+#discuss span p:nth-child(4){
+	color: #585858;
+	position: absolute;
+	top: 10px;
+	right: 5px;
+}
+#discuss p:last-child{
+	text-align: center;
+}
+#discuss span hr{
+	margin-top: 46px;
+}
+#discuss .user{
+	color: #129aee;
+	display: inline;
+}
+/*----------------------sidebar_相关新闻-------------------*/
+#sidebar{
+	margin-left: 740px;
+}
+#sidebar h3 {
+	margin: 20px 0px;
+	padding-left: 5px;               /*标题旁边的小竖条*/
+	border-left: 3px solid #129aee;
+}
+#sidebar span p:nth-child(2){
+	color: #585858;
+}
+#sidebar span p{
+	padding: 10px;
+}
+/*-----------------------sidebar_热门频道------------------*/
+#sidebar table td{
+	padding: 5px 20px;
+}
+#sidebar table{
+	text-align: center;
+}
+#sidebar .RSS a{
+	padding: 5px 15px;
+	color: #129aee;
+ 	border:1px solid #a0a0a0;
+ 	border-radius: 15px; 
+}
+#sidebar .RSS a:hover{
+	color: #fff;
+}
+/*------------------------footer----------------------*/
+footer{
+	background-color: #f1f1f1;
+}
+footer hr{
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+footer p{
+	text-align: center;
+}

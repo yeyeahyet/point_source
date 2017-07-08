@@ -1,0 +1,210 @@
+/*----------------------通用样式--------------------------------------*/
+@charset "utf-8";
+*{
+	font-family: "Microsoft Yahei",sans-serif;
+	margin: 0;          
+	padding: 0;			/* 移除 padding 和 margin */
+}
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{
+	display:block
+	}					/*html5标签默认为行内元素，将其设置为块级元素方便布局*/
+img{
+	border: 0;
+}
+a{
+	text-decoration: none;
+}
+a:link,a:visited{
+	color: #129aee;
+}
+a:hover,a:focus,a:active{
+	background-color: #129aee;
+	color: #fff;
+}
+.clear:before,.clear:after{		/*清除浮动*/
+	content: "";
+	display: table;
+}
+.clear:after{
+	clear: both;
+}
+.clear{
+	*zoom: 1;
+}
+#contain{
+	margin: auto 150px;
+}
+/*------------------------head------------------------------*/
+header{
+	background-color: #f1f1f1;
+	height: 28px;
+	box-shadow: 0px 5px 20px #bdbdbd;
+	position: relative;
+}
+header p{
+	position: absolute;
+	right: 10px;
+	line-height: 28px;
+	color: #585858;
+}
+/*------------------Logo & 搜索 --------------------------*/
+#logo_search{
+	position: relative;
+}
+.logo{
+	margin:20px 0px; 
+}
+#search {
+	padding: 0;
+	margin: 0; 
+	border: none; 
+	position: absolute;
+	top: 20px; 
+	right: 0px;   
+}   
+input.input_text{     	      
+ 	margin-right: 10px; 
+ 	-web-kit-appearance:none; 	 /*清除输入框的默认样式*/
+ 	-moz-appearance:none;
+ 	height: 28px;
+ 	width: 240px;
+ 	border:1px solid #585858;
+ 	border-radius: 4px;    
+ } 
+button.search_btn{
+	border: none;
+	width: 48px;
+	height: 28px;
+	color: #fff;
+	line-height: 26px;
+	background-color: #129aee;
+}
+/*----------------------横向导航栏--------------------------*/
+a{
+	text-decoration: none;
+}
+#nav{
+	/*如果是ol还要去除列表编号 list-style-type:none*/
+	margin: 0;				/*去除ul的边距和填充*/
+	padding: 0;
+	font-size: 0px;			/*为了解决inline_block的空白间隔*/
+	overflow: hidden;		/*防止列表项的溢出*/
+}
+#nav li{
+	font-weight: bold;
+	display: inline-block;
+	font-size: 16px;
+	padding:8px 0px;			/*上下填充一致*/
+}
+#nav a{
+	padding:8px 26px;			/*链接hover时显示为块状*/
+}
+#nav a:link,#nav a:visited{
+	color: #000;
+}
+#nav a:hover,#nav a:focus,#nav a:active{
+	color: #fff;
+	background-color: #129aee;
+}
+/*------------------------主要内容----------------------------*/
+#content{
+	width: 665px;
+	float: left;
+	padding: 20px 0px;
+}
+#content article section img{
+	float: left;
+}
+#content h3{
+	margin: 10px 0px;
+	margin-left: 200px;
+}
+#content p{
+	color: #585858;
+	margin-top: 40px;
+	margin-left: 200px;
+}
+#content .pic_wall h3,#content .pic_wall p{
+	margin: 10px 0px;
+}
+#content .pic_wall img{
+	padding-right: 5px;
+}
+/*-----------------------侧边栏_推荐----------------------------*/
+#sidebar{
+	margin-left:740px; 
+}
+#recommend {
+	padding: 20px 0px;
+}
+#recommend span img{
+	width: 70px;
+	height: 70px;
+	float: left;
+	padding-top: 10px;
+	border-radius: 50%;		/*图片圆形显示*/
+}
+#recommend p{
+	padding-left: 90px;
+	padding-top: 10px;
+}
+#recommend p+p{    
+	color: #585858;
+	padding: 16px 0px;
+	padding-left: 90px;
+}
+/*---------------------侧边栏_热文排行-------------------*/
+#hot_text{
+	padding: 10px 0px;
+}
+#hot_text>h3 span{
+	padding-bottom: 5px;
+	border-bottom: 2px solid #129aee;
+}
+#hot_text hr{
+	margin-top: 5px;
+}
+#hot_text ol,#hot_text li{
+	margin: 16px 10px;
+}
+#hot_text span:first-child{
+	list-style-image: url('img/list-1.jpg');
+}
+#hot_text span:first-child+span{
+	list-style-image: url('img/list-2.jpg');
+}
+#hot_text span:first-child+span+span{
+	list-style-image: url('img/list-3.jpg');
+}
+/*---------------------侧边栏_热门视频-------------------*/
+#hot_vedio{
+	margin: 20px 0px;
+}
+#hot_vedio h3>span{
+	padding-bottom: 5px;
+	border-bottom: 2px solid #129aee;
+}
+#hot_vedio hr{
+	margin: 6px 0px;
+}
+#hot_vedio span>img{
+	float: left;
+}
+#hot_vedio span p{
+	padding-left: 130px;
+	padding-top: 10px;
+}
+#hot_vedio span>p:last-child{
+	color: #585858;
+}
+/*------------------------footer----------------------*/
+footer{
+	background-color: #f1f1f1;
+}
+footer hr{
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+footer p{
+	text-align: center;
+}
